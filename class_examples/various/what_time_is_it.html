@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+
+        <h1>What time is it?</h1>
+        <p id="time"></p>
+
+        <script>
+
+            let timeElement = document.querySelector('#time')
+
+            setInterval( function() {
+                let date = Date()
+                timeElement.innerHTML = date
+            }, 1000)
+
+            // error notation -- remove the word function, leave the parentheses, add the arrow (=>)
+            // if you have just one parameter, you can omit the parentheses
+            setInterval( () => {
+                let date = Date()
+                timeElement.innerHTML = date
+            }, 1000)
+            
+
+        </script>
+
+    </body>
+</html>
