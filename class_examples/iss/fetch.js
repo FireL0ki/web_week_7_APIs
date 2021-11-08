@@ -54,8 +54,8 @@ function iss(attempts) {  // update for recursive timeout code update
             issMarker.setLatLng([lat, long])
         }
 
-        let now = Date()
-        timeIssLocationFetched.innerHTML = `This data was fetched at ${now}`
+        let currentDateTime = Date()
+        timeIssLocationFetched.innerHTML = `This data was fetched on ${currentDateTime}`
 
     }).catch( (err) => {
         attempts-- // subtract one from number of attempts (attempts = attempts - 1 is the same thing)
